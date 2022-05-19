@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TURNOS</title>
+    <!--  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    /> -->
+
+    <link rel="stylesheet" href="estiloTurnos2.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <button id="regreso">volver</button>Solicitud de Turnos en Sucursales
+      </h1>
+    </header>
+    <section>
+      <article>
+        <ul>
+          <li>
+            <p>
+              Al asistir a nuestras sucursales asegurese de cumplir con las
+              normas sanitarias: distancia social de al menos un metro, uso de
+              tapabocas, y mantener sus manos limpias.
+            </p>
+          </li>
+          <li>
+            <p>¿Que operaciones puede hacer en nuestras sucursales?</p>
+          </li>
+          <li>
+            <table id="operaciones">
+              <tr>
+                <td>
+                  <img
+                    id="tarjeta"
+                    src="img/tarjeta.png"
+                    alt=""
+                    height="40px"
+                  />
+                </td>
+                <td>
+                  <p>Retiro de Tarjetas de Credito o Debito</p>
+                </td>
+                <td><img src="img/cajafuerte.png" alt="" height="40px" /></td>
+                <td><p>Acceso a Caja de Seguridad</p></td>
+                <td><img src="img/Firma.png" alt="" height="40px" /></td>
+                <td><p>Firmas de Documentación</p></td>
+                <td>
+                  <img src="img/atencionpublico.jpg" alt="" height="40px" />
+                </td>
+                <td><p>Gestion de Cuentas en Caja</p></td>
+              </tr>
+            </table>
+            <!---
+            <div clas="container" id="container">
+              <div> TARJETA</div>
+              <DIV>CAJA</DIV>
+              <DIV>GESTION</DIV>
+            </div>
+            <div class="page">
+              <article class="1servicio">
+                <img id="tarjeta" src="img/tarjeta.png" alt="" height="40px" />
+              </article>
+              <article class="2servicio">
+                <p>Retiro de Tarjetas de Credito o Debito</p>
+              </article>
+              <article class="3servicio">
+                <img src="img/cajafuerte.png" alt="" height="40px" />
+              </article>
+              <article class="4servicio">
+                <p>Acceso a Caja de Seguridad</p>
+              </article>
+              <article class="5servicio">
+                <img src="img/Firma.png" alt="" height="40px" />
+              </article>
+              <article class="6servicio">
+                <p>Firmas de Documentación</p>
+              <article class="7servicio">
+                <img src="img/atencionpublico.jpg" alt="" height="40px" />
+              </article>
+              <article class="8servicio">
+                <p>Gestion de Cuentas en Caja</p>
+              </article>
+            </div>-->
+          </li>
+
+          <li>
+            <img id="linea" src="img/dorado2.jpg" alt="" />
+            <p>
+              Para solicitar el turno: ingrese sus datos en la seccion inferior,
+              elija la sucursal que le quede mas cercana, y la fecha en la que
+              desea obtener el turno.
+            </p>
+            <p>
+              Una vez solicitado el turno, recibira un correo de verificación.
+            </p>
+          </li>
+        </ul>
+      </article>
+
+      <form action="">
+        <p>SOLICITUD DE TURNOS</p>
+        <table>
+          <tr>
+            <td>
+              <label for="email">Email </label>
+            </td>
+            <td>
+              <input
+                id="email"
+                name="email"
+                type="text"
+                placeholder="ejemplo@gmail.com"
+              />
+            </td>
+            <td>
+              <label for="sucursal">Sucursal</label>
+            </td>
+            <td>
+              <select name="sucursal" id="sucursal">
+                <option value="">Elija Sucursal</option>
+                <option value="">Buenos Aires</option>
+                <option value="">San Juan</option>
+                <option value="">Corrientes</option>
+                <option value="">Mendoza</option>
+              </select>
+            </td>
+            <td>
+              <label for="fecha">Fecha</label>
+            </td>
+            <td>
+              <input type="date" name="fecha" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="apellido">Apellido</label>
+            </td>
+            <td>
+              <input
+                id="apellido"
+                name="apellido"
+                type="text"
+                placeholder="ingrese apellido..."
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="nombre">Nombre</label>
+            </td>
+            <td>
+              <input
+                id="nombre"
+                name="nombre"
+                type="text"
+                placeholder="ingrese nombre..."
+              />
+            </td>
+          </tr>
+        </table>
+        <button id="boton" name="button">ENVIAR SOLICITUD</button>
+      </form>
+    </section>
+    <footer></footer>
+  </body>
+</html>
