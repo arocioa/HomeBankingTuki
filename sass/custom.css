@@ -1,0 +1,105 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  background-color: black;
+}
+
+form {
+  margin: auto;
+  width: 50%;
+  max-width: 480px;
+  background-image: url(/images/SL-061319-20750-48.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 250px;
+  border: 1px solid black;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  padding: 1px;
+  width: 100%;
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#c2c618),
+    to(#f3bc07)
+  );
+  background: linear-gradient(#c2c618, #f3bc07);
+  border: 0;
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 40px, 0, 0, 0;
+}
+
+input[type="submit"]:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#bdc00d),
+    to(#a6a802)
+  );
+  background: linear-gradient(#bdc00d, #a6a802);
+  border: 0;
+}
+
+input[type="submit"]:active {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 75%;
+    padding: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 95%;
+    padding: 80px;
+  }
+}
+
+@media (max-width: 380px) {
+  form {
+    width: 100%;
+    padding: 60px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 100px;
+    color: whitesmoke;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: x-large;
+  }
+  input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    padding: 9px;
+    width: 100%;
+    margin: 30px 0;
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=custom.css.map */
