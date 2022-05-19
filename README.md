@@ -1,2 +1,4 @@
 # HomeBankingTuki
-Grupo 6
+Comisión 3
+Grupo 6 - TukiStack
+#Integrantes:
