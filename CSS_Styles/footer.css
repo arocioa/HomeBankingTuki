@@ -1,0 +1,43 @@
+.redes_container {
+  display: block;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+footer div section {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.youtube {
+  display: block;
+  margin: 5px 0;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 1px 4px 0 rgba(222, 238, 77, 0.2);
+  transition: 0.2s;
+}
+.twitter {
+  display: block;
+  margin: 5px 0;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 1px 4px 0 rgba(222, 238, 77, 0.2);
+  transition: 0.2s;
+}
+.instagram {
+  display: block;
+  margin: 5px 0;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 1px 4px 0 rgba(222, 238, 77, 0.2);
+  transition: 0.2s;
+}
+footer div section:hover a {
+}

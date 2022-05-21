@@ -3,6 +3,7 @@
     margin: 0;
     border: 0;
 } */
+
 .carousel .carousel-inner {
   height: 700px;
 }
@@ -10,7 +11,7 @@
   min-height: 200px;
   /* prevent it from stretch in screen size < than 768px */
   object-fit: cover;
-  max-height:550px;
+  max-height: 550px;
 }
 
 @media (max-width: 768px) {
@@ -20,5 +21,5 @@
   }
 }
 .carousel .carousel-item {
-    max-height:550px;
+  max-height: 550px;
 }
