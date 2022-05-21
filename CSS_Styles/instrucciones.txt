@@ -1,1 +1,3 @@
-poner el codigo de CSS, una vez comprobado que funciona, abajo de todo en un comentario poner un ejemplo de como aplicaro al codigo en HTML para poder verlo en funcionamiento
+- poner el codigo de CSS
+- una vez comprobado que funciona
+- abajo de todo en un comentario poner un ejemplo de como aplicaro al codigo en HTML para poder verlo en funcionamiento
