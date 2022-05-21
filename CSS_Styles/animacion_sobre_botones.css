@@ -1,0 +1,53 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content:
+    space-between;
+}
+
+.nav__logo{
+    color: #fff;
+}
+
+.nav__list{
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+.nav__link{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.nav__link::after{
+    content: "";
+    position: absolute;
+    left: 0;bottom: 0;
+    width: 100%; height: 2px;
+    background-color: #fff;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.nav__link:hover::after{
+    transform: scalex(1);
+    transform-origin: left;
+}
+
+
+/* ejemplo de uso en HTML:
+<body style="background-color:black;">
+    <nav class="nav">
+        <span class="nav__logo">LOGO</span>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="#" class="nav__link">Home</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+*/
