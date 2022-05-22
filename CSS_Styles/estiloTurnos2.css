@@ -126,7 +126,7 @@ td {
   padding-bottom: 25%;
   margin-bottom: 20px;
   flex-grow: 100%;
-  color: #000;
+  color: #fff;
   text-align: center;
   border: solid 0.009px #000 /*#e37760*/;
   border-radius: 7px;
@@ -137,6 +137,8 @@ td {
   padding-right: 0%;
   font-size: xx-large;
   background-color: #ff8906;
+
+  text-shadow: 2px 2px 8px #000;
 }
 div .accion:hover {
   cursor: pointer;
@@ -191,9 +193,10 @@ div .accion:hover {
   width: 80%;
 }
 .texto_operaciones {
-  font-size: 50px;
+  font-size: 40px;
 
   text-shadow: 2px 2px #e37760;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 811px) {
   #boton {
