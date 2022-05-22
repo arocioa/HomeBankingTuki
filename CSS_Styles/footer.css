@@ -1,17 +1,43 @@
+footer {
+  box-sizing: border-box;
+  bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.diseño_1 {
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background-color: white;
+}
+.descripcion_del_banco {
+  margin-bottom: 8px;
+}
+
+/* REDES */
+.texto_redes {
+  margin-top: 1px;
+}
 .redes_container {
-  display: block;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
 }
 footer div section {
-  display: inline-block;
+  display: inline;
   box-sizing: border-box;
 }
 
 .youtube {
   display: block;
-  margin: 5px 0;
+  margin: 5px 8px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 1px 4px 0 rgba(222, 238, 77, 0.2);
+  transition: 0.2s;
+}
+.facebook {
+  display: block;
+  margin: 5px 8px;
   padding: 10px 15px;
   background-color: #333;
   color: #fff;
@@ -21,7 +47,7 @@ footer div section {
 }
 .twitter {
   display: block;
-  margin: 5px 0;
+  margin: 5px 8px;
   padding: 10px 15px;
   background-color: #333;
   color: #fff;
@@ -31,7 +57,7 @@ footer div section {
 }
 .instagram {
   display: block;
-  margin: 5px 0;
+  margin: 5px 8px;
   padding: 10px 15px;
   background-color: #333;
   color: #fff;
@@ -40,4 +66,59 @@ footer div section {
   transition: 0.2s;
 }
 footer div section:hover a {
+  filter: blur(2px);
+}
+
+footer div section a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 2px 4px 0 rgba(222, 238, 77, 0.3);
+  filter: none;
+}
+.youtube:hover {
+  background-color: #c50d23;
+  color: white;
+}
+.facebook:hover {
+  background-color: #3b5999;
+  color: white;
+}
+.twitter:hover {
+  background-color: #55acee;
+  color: white;
+}
+.instagram:hover {
+  background-color: #e4405f;
+  color: white;
+}
+
+/* CENTRO DE AYUDA */
+.texto_centro_de_ayuda {
+  margin-top: 1px;
+}
+.irComienzo {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.Atencion_al_cliente {
+  margin-top: 1rem;
+}
+.email {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin: 0px 0px 1.5rem 0px;
+}
+.app_itbank {
+  display: inline-block;
+  margin: 0px;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+.diseño_2 {
+  display: block;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background-color: white;
 }
