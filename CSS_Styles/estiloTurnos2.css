@@ -1,25 +1,20 @@
 body {
-  background-image: url("img_turno/fondo.jpg");
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: large;
-}
+  background-color: #1a1c40;
 
-/*hr {
-  height: 50px;
-  color: #fff;
-  margin-top: 20px;
-}*/
-header {
-  align-items: baseline;
-  text-align: right;
-  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
   font-style: oblique;
-  color: #000;
-  /*background-color: #f9f870;*/
-  background-image: url("img_turno/dorado2.jpg");
+  color: #fff;
 }
-
+nav {
+  align-items: flex-start;
+}
+#titulo {
+  background-color: #e37760;
+  margin: 50px;
+  float: left;
+  text-shadow: 1px 1px #e37760;
+}
 #regreso {
   margin: 0px 660px 2px 1px;
   padding: 10px;
@@ -28,20 +23,11 @@ header {
   border-radius: 20px;
   font-weight: 600;
 }
-
-#regreso1 {
-  margin-right: 40px;
-  padding: 10px;
-  background-color: #000;
-  color: #fff;
-  border-radius: 16px;
-  font-weight: 600;
-}
+/*boton de VOLVER a la pagina anterior: se coloca margen, padding, color negro de fondo, color blanco de letras, borde con radio, letra negrita*/
 
 article {
   margin-left: 10px;
 }
-
 section {
   margin: 0px auto;
 }
@@ -62,16 +48,6 @@ section ul {
   width: 90%;
 }
 
-/*.container {
-  display: flex;
-  flex-direction: column;
-}
-.page {
-  display: flex;
-  width: 100%;
-  border: #fff;
-}*/
-
 #tarjeta {
   padding: 2px;
 }
@@ -88,27 +64,213 @@ table {
   border: solid 1px #f1f1e6;
   /*background-color: #f1f1e6;*/
 }
-
 td {
   padding: 10px;
   font-weight: 400;
   color: #fff;
 }
-
 #boton {
   padding: 6px;
   border-radius: 4px;
+  border-color: #000;
   font-weight: 600;
   margin-left: 990px;
   color: #fff;
+  text-shadow: 2px 2px #000;
   background-color: rgb(7, 191, 7);
 }
+.home {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+.caja {
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
+  margin: auto;
+  align-items: center;
+}
+.caja p {
+  align-items: center;
+  height: 20px;
+  padding: 1px;
+  margin-top: 1px;
+}
+.caja:first-child {
+  flex: 2;
+  padding: 10px;
+  margin: 10px;
+}
+#operaciones {
+  width: auto;
+  height: 20px;
+  margin: 10px;
+}
 
-/*<div class="container">
-        <div class="row">
-          <div class="col-4 border">333</div>
-          <div class="col-4 border">333</div>
-          <div class="col-4 border">333</div>
-        </div>
-      </div>
-      */
+.acciones {
+  box-sizing: border-box;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 5rem;
+  margin-bottom: 10px;
+  justify-content: space-around;
+}
+.accion {
+  margin: 10px;
+  margin-top: 5px;
+  padding-bottom: 25%;
+  margin-bottom: 20px;
+  flex-grow: 100%;
+  color: #000;
+  text-align: center;
+  border: solid 0.009px #000 /*#e37760*/;
+  border-radius: 7px;
+  min-width: 250px;
+  padding: 20px;
+  padding-top: 0.5px;
+  padding-left: 0%;
+  padding-right: 0%;
+  font-size: xx-large;
+  background-color: #ff8906;
+}
+div .accion:hover {
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+  box-shadow: 1px 1px 1px 5px #fff;
+}
+.foto {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+#titulo_formulario {
+  margin-left: 300px;
+  font-weight: 700;
+  color: #000;
+  text-shadow: 1px 1px #e37760;
+  font-size: x-large;
+}
+.formulario {
+  color: #fff;
+  display: flex;
+  border: solid #ffb450 4px;
+  border-radius: 15px;
+  width: 70%;
+  background-color: #1a1c40;
+}
+.parte_blanca {
+  background-color: #fff;
+  font-weight: 800;
+  color: #000;
+}
+
+.datos1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.datos11 {
+  padding: 20px;
+  margin-left: 200px;
+}
+.datos12 {
+  padding: 20px;
+  margin-left: 200px;
+}
+
+.inicio {
+  margin-bottom: 40px;
+  font-size: xx-large;
+  font-weight: 900;
+  margin-left: 90px;
+  width: 80%;
+}
+.texto_operaciones {
+  font-size: 50px;
+
+  text-shadow: 2px 2px #e37760;
+}
+@media screen and (max-width: 700px) {
+  #boton {
+    padding: 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 95px;
+
+    width: 50%;
+    color: #fff;
+    background-color: rgb(7, 191, 7);
+  }
+
+  #titulo_formulario {
+    margin-left: 10px;
+    text-align: left;
+  }
+  .datos11 {
+    padding: 10px;
+    margin-left: 25px;
+    width: 100%;
+  }
+  .datos12 {
+    margin-left: 25px;
+    width: 90%;
+  }
+  .formulario {
+    margin: 0 auto;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+  }
+  header h1 {
+    font-weight: 900;
+    width: auto;
+    font-size: small;
+    background-color: #e37760;
+  }
+
+  .inicio {
+    margin-bottom: 600px;
+    margin-left: 20px;
+    padding: 20px;
+    color: #fff;
+    height: auto;
+  }
+  .fin {
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .texto_operaciones {
+    font-size: x-large;
+    font-weight: 900;
+  }
+  .acciones {
+    align-items: center;
+    width: 100%;
+    font-size: medium;
+  }
+  .accion {
+    align-items: center;
+    font-size: x-large;
+  }
+
+  .foto {
+    width: 100%;
+    height: auto;
+  }
+  nav {
+    width: auto;
+    height: auto;
+  }
+  .
+}
