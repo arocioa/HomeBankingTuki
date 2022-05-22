@@ -120,6 +120,14 @@ td {
   margin-bottom: 10px;
   justify-content: space-around;
 }
+.cabeza {
+  font-size: xxxxxxx-large;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px #000;
+  background-color: #ff8906;
+  border-radius: 8px;
+  padding: 10px;
+}
 .accion {
   margin: 10px;
   margin-top: 5px;
