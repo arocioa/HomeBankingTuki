@@ -79,6 +79,17 @@ td {
   text-shadow: 2px 2px #000;
   background-color: rgb(7, 191, 7);
 }
+#boton2 {
+  padding: 6px;
+  border-radius: 4px;
+  border-color: #000;
+  font-weight: 200;
+  margin-left: 5px;
+  color: #fff;
+  font-size: small;
+  text-shadow: 2px 2px #000;
+  background-color: #ff8906;
+}
 .home {
   font-weight: 600;
   display: flex;
@@ -120,13 +131,23 @@ td {
   margin-bottom: 10px;
   justify-content: space-around;
 }
+.cabeza {
+  font-size: xxxxxxx-large;
+  font-weight: 100;
+  text-shadow: 2px 2px 8px #000;
+  background-color: #ff8906;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: right;
+  font-size: xx-large;
+}
 .accion {
   margin: 10px;
   margin-top: 5px;
   padding-bottom: 25%;
   margin-bottom: 20px;
   flex-grow: 100%;
-  color: #000;
+  color: #fff;
   text-align: center;
   border: solid 0.009px #000 /*#e37760*/;
   border-radius: 7px;
@@ -137,6 +158,8 @@ td {
   padding-right: 0%;
   font-size: xx-large;
   background-color: #ff8906;
+
+  text-shadow: 2px 2px 8px #000;
 }
 div .accion:hover {
   cursor: pointer;
@@ -191,9 +214,10 @@ div .accion:hover {
   width: 80%;
 }
 .texto_operaciones {
-  font-size: 50px;
+  font-size: 40px;
 
   text-shadow: 2px 2px #e37760;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 811px) {
   #boton {
