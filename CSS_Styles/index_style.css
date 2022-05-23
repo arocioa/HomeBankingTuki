@@ -23,3 +23,7 @@
 .carousel .carousel-item {
   max-height: 550px;
 }
+
+.bg-main {
+  background-color: #0f0e17;
+}
