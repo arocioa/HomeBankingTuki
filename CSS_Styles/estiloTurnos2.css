@@ -79,6 +79,17 @@ td {
   text-shadow: 2px 2px #000;
   background-color: rgb(7, 191, 7);
 }
+#boton2 {
+  padding: 6px;
+  border-radius: 4px;
+  border-color: #000;
+  font-weight: 200;
+  margin-left: 5px;
+  color: #fff;
+  font-size: small;
+  text-shadow: 2px 2px #000;
+  background-color: #ff8906;
+}
 .home {
   font-weight: 600;
   display: flex;
@@ -122,11 +133,13 @@ td {
 }
 .cabeza {
   font-size: xxxxxxx-large;
-  font-weight: 700;
+  font-weight: 100;
   text-shadow: 2px 2px 8px #000;
   background-color: #ff8906;
   border-radius: 8px;
   padding: 10px;
+  text-align: right;
+  font-size: xx-large;
 }
 .accion {
   margin: 10px;
