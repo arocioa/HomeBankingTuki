@@ -23,5 +23,18 @@ function ultimoAPantalla() {
 
     li.appendChild(text);
     listado.appendChild(li);
+}
 
+function sumarValores() {
+    let suma = 0;
+    for (let pago of pagos) {
+        suma += parseInt(pagos);
+    }
+    return suma;
+}
+
+function mostrarPagoIndividualEnHTML() {
+    const total = sumarValores(pagos);
+    const aporteIndividual = total / usuarios.length;
+    cuadroResultado.innerText = 'Total: ${total} A cada uno le toca aportar: ${aporteIndividual.toFixed(2)}';
 }
