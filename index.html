@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login ITBANK</title>
-    <link rel="stylesheet" href="./CSS_Styles/Login.css" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -13,78 +11,213 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="home.css" />
+    <!-- FOOTER STYLE -->
+    <link rel="stylesheet" href="./CSS_Styles/footer.css">
+    <!-- Bootstrap Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!-- Index css -->
+    <link rel="stylesheet" href="/CSS_Styles/index_style.css" />
+    <title>Itbank</title>
   </head>
   <body>
-    <img
-      src="./imagenes/itbanklogo3.png"
-      alt=""
-      width="200px"
-      height="auto"
-      class="img-fluid"
-    />
-    <!-- FONDO -->
-    <div class="custom-shape-divider-bottom-1653183514">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-    </div>
-    <div class="custom-shape-divider-bottom-1653183658">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-    </div>
-    <div class="custom-shape-divider-bottom-1653183730">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-    </div>
-    <form action="">
-      <h2 class="form_titulo">Inicia Sesión</h2>
-      <p class="form_parrafo">Al ingresar tus datos</p>
-      <a href="home.html" class="entrar">Entra aquí</a>
-
-      <div class="form_contenedor">
-        <div class="form_grupo">
-          <input type="text" id="user" class="form_input" placeholder=" " />
-          <label for="user" class="form_label">Usuario:</label>
-          <span class="form_line"></span>
+    <!-- Script de JS para bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Comienzo -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img_index/itbank-alt.svg" alt="" width="80px" height="auto" class="d-flex align-text-top"/>
+          </a>
+          <!-- Hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- /Hamburguesa -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- items -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Solapas -->
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Iniciar sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="beneficios.html">Beneficios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="turnos.html">Turnos</a>
+              </li>
+              <!-- /Solapas -->
+              <!-- Menú dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Centro de ayuda
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Guía</a></li>
+                  <li><a class="dropdown-item" href="#">Sucursales</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Centro de atención al cliente</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- /Menú dropdown -->
+              <li class="nav-item">
+                <a class="nav-link disabled">Registrarse</a>
+              </li>
+            </ul>
+            <!-- /items -->
+          </div>
         </div>
-        <div class="form_grupo">
-          <input
-            type="text"
-            id="contraseña"
-            class="form_input"
-            placeholder=" "
-          />
-          <label for="contraseña" class="form_label">Contraseña:</label>
-          <span class="form_line"></span>
+      </nav>
+    </header>
+    <!-- carousel -->
+    <header class="w-100 h-50 bg-dark">
+      <div class="container-fluid h-50 bg-light">
+        <!-- carousel -->
+        <div class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img_index/oldcouplecc.jpg" class="d-block w-100" alt="..."/>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img_index/mancardcc.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img_index/happycc.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
         </div>
       </div>
-    </form>
+    </header>
+    <!-- /carousel -->
+    <!-- cartas -->
+    <div class="container-fluid bg-light p-3">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-50">
+            <img
+              src="./img_index/oldcouplecc.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Título</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni facilis ut, vitae harum quibusdam maxime!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-50">
+            <img
+              src="./img_index/mancardcc.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Título</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni facilis ut, vitae harum quibusdam maxime!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-50">
+            <img src="./img_index/happycc.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Título</h5>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni facilis ut, vitae harum quibusdam maxime!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-50">
+            <img src="./img_index/cardcc.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Título</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni facilis ut, vitae harum quibusdam maxime!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /cartas -->
+    <!-- footer -->
+       <footer class="text-center bg-dark w-100 text-white">
+      <div class="container-fluid p-4">
+        <div class="row">
+           <div class="col-12 p-sm3 col-lg-4 ">
+            <a href="#">
+            <img src="./img_index/itbank-alt.svg" alt="" width="200px" height="auto" class=" img-fluid "/>
+          </a>
+          <p>© 2022 Banco ITBA Argentina S.A.</p>
+          <div class="descripcion_del_banco"> Somos un Banco registrado bajo las leyes del Estado y supervisado por la Oficina del Comisionado de Instituciones Financieras.
+              Operamos como una entidad bancaria internacional (EBI), con amplio alcance en 20 países latinoamericanos.</div>
+          <p class="diseño_1">-</p><!-- lo hice para que se vea el triangulo blanco -->
+          </div>
+          
+
+          <div class="col-12 p-sm3 col-lg-4 redes_container">
+            <h3 class="texto_redes">Nuestras redes:</h3>
+            <section>
+             <a class="youtube" href=""><i class="bi bi-youtube"></i></i></a>
+        <a class="instagram" href=""><i class="bi bi-instagram"></i></a>
+        <a class="twitter" href=""><i class="bi bi-twitter"></i></a>
+        <a class="facebook" href=""><i class="fa-brands fa-facebook"></i></a>
+        </section>
+          </div>
+
+          <div class="col-12 p-sm3 col-lg-4 ">
+           <h3 class="texto_centro_de_ayuda">Centro de ayuda</h3>
+            <!-- <i class="bi-badge-4k-fill"></i> -->
+            <h6 class="Atencion_al_cliente">Atencion al cliente</h6>
+            <p class="numero_de_contacto">
+              +549 264-5075448
+            </p>
+            <h6>Envia tu consulta:</h6>
+        <a class="email" target="_blank" href="mailto:itbaConsultas@gmail.com"><i class="fa-solid fa-envelope"></i> itbaConsultas@gmail.com</a>
+            <a class="app_itbank" href=""><i class="fa-solid fa-mobile-screen"></i>App Itbank</a>
+            <p class="diseño_2">-</p><!-- lo hice para que se vea el triangulo blanco -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
   </body>
 </html>
