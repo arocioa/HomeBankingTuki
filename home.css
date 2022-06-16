@@ -2641,7 +2641,6 @@ textarea.form-control-lg {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color-adjust: exact;
 }
 
 .form-check-input[type="checkbox"] {
@@ -12336,7 +12335,7 @@ body {
 .pcolor {
   color: #e53170;
 }
-.background_valores {
+.color_bg_valores {
   background-color: #ffc107;
 }
 .custom-shape-divider-bottom-1653183514 {
