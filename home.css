@@ -12348,6 +12348,7 @@ body {
   line-height: 0;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+  z-index: -1;
 }
 
 .custom-shape-divider-bottom-1653183514 svg {
@@ -12370,6 +12371,7 @@ body {
   line-height: 0;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+  z-index: -1;
 }
 
 .custom-shape-divider-bottom-1653183658 svg {
@@ -12392,6 +12394,7 @@ body {
   line-height: 0;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+  z-index: -1;
 }
 
 .custom-shape-divider-bottom-1653183730 svg {
@@ -12404,5 +12407,6 @@ body {
 .custom-shape-divider-bottom-1653183730 .shape-fill {
   fill: #e53170;
 }
+
 
 /*# sourceMappingURL=home.css.map */
