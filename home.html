@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <!-- Bootstrap Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+    <!-- Index css -->
+    <link rel="stylesheet" href="/CSS_Styles/index_style.css" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -60,8 +67,158 @@
         ></path>
       </svg>
     </div>
+    <!-- Comienzo -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./img_index/itbank-alt.svg"
+              alt=""
+              width="80px"
+              height="auto"
+              class="d-flex align-text-top"
+            />
+          </a>
+          <!-- Hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- /Hamburguesa -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- items -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Solapas -->
+
+              <li class="nav-item">
+                <a class="nav-link" href="beneficios.html">Beneficios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="turnos.html">Turnos</a>
+              </li>
+              <!-- /Solapas -->
+              <!-- Menú dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Centro de ayuda
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Guía</a></li>
+                  <li><a class="dropdown-item" href="#">Sucursales</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Centro de atención al cliente</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- /Menú dropdown -->
+            </ul>
+            <!-- /items -->
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- TÍTULO -->
     <h1 class="text-center text-white pt-3">HOMEBANKING</h1>
+    <!-- COTIZACIONES -->
+    <div class="container justify-content-center">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card text-bg-warning text-center" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title" id="card1"></h5>
+              <h6 class="card-subtitle mb-2 text-muted text-center">
+                Valores:
+              </h6>
+              <h6 class="card-text">
+                Compra: <span id="valor_de_compra1"></span>
+              </h6>
+              <h6 class="card-text">
+                Venta: <span id="valor_de_venta1"></span>
+              </h6>
+              <p class="card-text">
+                Variacion: <span id="variacion_de_valor1"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-bg-warning text-center" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title" id="card2"></h5>
+              <h6 class="card-subtitle mb-2 text-muted text-center">
+                Valores:
+              </h6>
+              <h6 class="card-text">
+                Compra: <span id="valor_de_compra2"></span>
+              </h6>
+              <h6 class="card-text">
+                Venta: <span id="valor_de_venta2"></span>
+              </h6>
+              <p class="card-text">
+                Variacion: <span id="variacion_de_valor2"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-bg-warning text-center" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title" id="card3"></h5>
+              <h6 class="card-subtitle mb-2 text-muted text-center">
+                Valores:
+              </h6>
+              <h6 class="card-text">
+                Compra: <span id="valor_de_compra3"></span>
+              </h6>
+              <h6 class="card-text">
+                Venta: <span id="valor_de_venta3"></span>
+              </h6>
+              <p class="card-text">
+                Variacion: <span id="variacion_de_valor3"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-bg-warning text-center" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title" id="card4"></h5>
+              <h6 class="card-subtitle mb-2 text-muted text-center">
+                Valores:
+              </h6>
+              <h6 class="card-text">
+                Compra: <span id="valor_de_compra4"></span>
+              </h6>
+              <h6 class="card-text">
+                Venta: <span id="valor_de_venta4"></span>
+              </h6>
+              <p class="card-text">
+                Variacion: <span id="variacion_de_valor4"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN DE COTIZACIONES -->
     <!-- INFO CARDS -->
     <div class="container justify-content-center pt-3">
       <div class="row">
@@ -419,5 +576,6 @@
         </div>
       </div>
     </div>
+    <script src="JS/fetch_api.js"></script>
   </body>
 </html>
