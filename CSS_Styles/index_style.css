@@ -23,3 +23,11 @@
 .carousel .carousel-item {
   max-height: 550px;
 }
+
+.hotfix {
+  max-height: 191px;
+  min-height: 191px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
