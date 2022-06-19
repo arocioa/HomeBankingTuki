@@ -12415,4 +12415,12 @@ body {
   );
 }
 
+.bg-card-two {
+  background-image: radial-gradient(
+    circle at top right,
+    #ff8906 50%,
+    #f25f4c 50%
+  );
+}
+
 /*# sourceMappingURL=home.css.map */
