@@ -12409,7 +12409,9 @@ body {
 
 .bg-card-one {
   background-image: radial-gradient(
-    circle at bottom right, #e53170 70%, #f25f4c 30%
+    circle at bottom right,
+    #e53170 70%,
+    #f25f4c 30%
   );
 }
 
@@ -12421,4 +12423,7 @@ body {
   );
 }
 
+.bg-cotiz {
+  background-image: linear-gradient(to top, #ff8906, #f25f4c, #e53170);
+}
 /*# sourceMappingURL=home.css.map */
