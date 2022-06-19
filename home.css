@@ -12407,6 +12407,11 @@ body {
   fill: #e53170;
 }
 
+.bg-card-one {
+  background-image: radial-gradient(
+    circle at bottom right, #e53170 70%, #f25f4c 30%
+  );
+}
 
 .bg-card-two {
   background-image: radial-gradient(
