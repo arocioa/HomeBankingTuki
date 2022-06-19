@@ -2641,7 +2641,6 @@ textarea.form-control-lg {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color-adjust: exact;
 }
 
 .form-check-input[type="checkbox"] {
@@ -12336,7 +12335,9 @@ body {
 .pcolor {
   color: #e53170;
 }
-
+.color_bg_valores {
+  background-color: #ffc107;
+}
 .custom-shape-divider-bottom-1653183514 {
   position: fixed;
   bottom: 0;
@@ -12406,14 +12407,6 @@ body {
   fill: #e53170;
 }
 
-/* FONDO TARJETAS */
-.bg-card-one {
-  background-image: radial-gradient(
-    circle at bottom right,
-    #e53170 70%,
-    #f25f4c 30%
-  );
-}
 
 .bg-card-two {
   background-image: radial-gradient(
