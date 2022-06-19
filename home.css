@@ -12427,3 +12427,30 @@ body {
   background-image: linear-gradient(to top, #ff8906, #f25f4c, #e53170);
 }
 /*# sourceMappingURL=home.css.map */
+
+.hotfix {
+  max-height: 15rem;
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 578px) {
+  .hotfix {
+    max-width: 50%;
+    min-width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hotfix {
+    max-width: 50%;
+    min-width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
