@@ -2,16 +2,19 @@ const card1 = document.querySelector("#card1");
 const card2 = document.querySelector("#card2");
 const card3 = document.querySelector("#card3");
 const card4 = document.querySelector("#card4");
+const card5 = document.querySelector("#card5");
 
 const valor_de_compra1 = document.querySelector("#valor_de_compra1");
 const valor_de_compra2 = document.querySelector("#valor_de_compra2");
 const valor_de_compra3 = document.querySelector("#valor_de_compra3");
 const valor_de_compra4 = document.querySelector("#valor_de_compra4");
+const valor_de_compra5 = document.querySelector("#valor_de_compra5");
 
 const valor_de_venta1 = document.querySelector("#valor_de_venta1");
 const valor_de_venta2 = document.querySelector("#valor_de_venta2");
 const valor_de_venta3 = document.querySelector("#valor_de_venta3");
 const valor_de_venta4 = document.querySelector("#valor_de_venta4");
+const valor_de_venta5 = document.querySelector("#valor_de_venta5");
 
 const variacion_de_valor1 = document.querySelector("#variacion_de_valor1");
 const variacion_de_valor2 = document.querySelector("#variacion_de_valor2");
@@ -34,6 +37,12 @@ window.onload = function () {
       let title4 = data[3].casa.nombre;
       card4.innerHTML = `${title4}`;
 
+      let title5 = data[4].casa.nombre;
+      card5.innerHTML = `${title5}`;
+
+      let title6 = data[5].casa.nombre;
+      card6.innerHTML = `${title6}`;
+
       let compra1 = data[0].casa.compra;
       valor_de_compra1.innerHTML = `${compra1}`;
       let compra2 = data[1].casa.compra;
@@ -42,6 +51,10 @@ window.onload = function () {
       valor_de_compra3.innerHTML = `${compra3}`;
       let compra4 = data[3].casa.compra;
       valor_de_compra4.innerHTML = `${compra4}`;
+      let compra5 = data[4].casa.compra;
+      valor_de_compra5.innerHTML = `${compra5}`;
+      let compra6 = data[5].casa.compra;
+      valor_de_compra6.innerHTML = `${compra6}`;
 
       let venta1 = data[0].casa.venta;
       valor_de_venta1.innerHTML = `${venta1}`;
@@ -51,6 +64,10 @@ window.onload = function () {
       valor_de_venta3.innerHTML = `${venta3}`;
       let venta4 = data[3].casa.venta;
       valor_de_venta4.innerHTML = `${venta4}`;
+      let venta5 = data[4].casa.venta;
+      valor_de_venta5.innerHTML = `${venta5}`;
+      let venta6 = data[5].casa.venta;
+      valor_de_venta6.innerHTML = `${venta6}`;
 
       let variacion1 = data[0].casa.variacion;
       variacion_de_valor1.innerHTML = `${variacion1}`;
@@ -60,5 +77,9 @@ window.onload = function () {
       variacion_de_valor3.innerHTML = `${variacion3}`;
       let variacion4 = data[3].casa.variacion;
       variacion_de_valor4.innerHTML = `${variacion4}`;
+      let variacion5 = data[4].casa.variacion;
+      variacion_de_valor5.innerHTML = `${variacion5}`;
+      let variacion6 = data[5].casa.variacion;
+      variacion_de_valor6.innerHTML = `${variacion6}`;
     });
 };
